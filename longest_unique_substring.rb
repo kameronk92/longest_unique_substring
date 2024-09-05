@@ -10,8 +10,15 @@ def longest_unique_substring(string)
 
   if string.include?(unique_char_string)
     count_unique_char
-  elsif string.include?(unique_char_string.chop)
-    count_unique_char - 1
   else
+    n = 0 
+    while n < count_unique_char do
+      if string.include?(unique_char_string[0..n])
+        n += 1
+      else
+        break
+      end
+    end
+    n
   end
 end
