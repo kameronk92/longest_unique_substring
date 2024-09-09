@@ -1,10 +1,6 @@
 def longest_unique_substring(string)
   string = string.downcase
-  
-  current_max = 0
-  current_count = 0
 
-  max_possible = string.length
   count_unique_char = string.split("").uniq.length
   unique_char_string = string.split("").uniq.join
 
@@ -22,7 +18,11 @@ def longest_unique_substring(string)
         break
       end
     end
-    # logic comparing n and m, reporting greater
-    n
+
+    if n > m 
+      n
+    else
+      m
+    end
   end
 end
