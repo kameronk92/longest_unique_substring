@@ -6,7 +6,7 @@ RSpec.describe 'longest_unique_substring' do
   end
 
   it 'case where longest substring is shorter than num unique characters' do
-    expect(longest_unique_substring('aAbccbb')). to eq(2)
+    expect(longest_unique_substring('aAbbccbb')). to eq(2)
   end
 
   it 'case where entire string is a unique substring' do 
